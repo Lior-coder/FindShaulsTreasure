@@ -68,10 +68,9 @@
 	  <MauiXaml Update="Pages\QuestHolder.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <Folder Include="Quests\" />
+	  <MauiXaml Update="Quests\BaseQuestView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

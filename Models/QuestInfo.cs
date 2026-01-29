@@ -8,7 +8,7 @@ namespace FindShaulsTreasure.Models
 {
     public enum QuestType { Manual, Automatic }
 
-    class QuestInfo
+    public class QuestInfo
     {
         public required string QuestName { get; set; }
 
@@ -18,7 +18,7 @@ namespace FindShaulsTreasure.Models
         //public required string LocationHint { get; set; }
         //public required string QuestLocation { get; set; }
 
-        public QuestType QuestType { get; set; }
-        public bool QuestSuccess { get; set; }
+        public QuestType QuestType { get; set; } = QuestType.Manual;
+        public bool QuestSuccess { get; set; } = false;
     }
 }
