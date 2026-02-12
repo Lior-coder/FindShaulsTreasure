@@ -1,9 +1,17 @@
+
 namespace FindShaulsTreasure.Quests.Group_05;
 
 public partial class Quest_05 : BaseQuestView
 {
+	
 	public Quest_05(int teamId) : base(teamId)
 	{
-		InitializeComponent();
+        Data = new Models.QuestInfo("Wordle בעברית", "Example Hint", Models.QuestType.Manual, "Example Answer");
+        InitializeComponent();
 	}
+
+    private void Grid_DescendantAdded(object sender, ElementEventArgs e)
+    {
+
+    }
 }
